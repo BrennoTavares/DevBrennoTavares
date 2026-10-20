@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio | Desenvolvedor de Software</title>
+  
+  <!-- Fontes do Google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  
+  <!-- Ícones Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- CSS Externo -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR FLUTUANTE MODERNA -->
+  <header>
+    <div class="nav">
+      <a href="#sobre" class="logo">&lt;Brenno.dev/&gt;</a>
+      <ul class="nav-links">
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#skills">Habilidades</a></li>
+        <li><a href="#trajetoria">Trajetória</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero container" id="sobre">
+    <div class="hero-content">
+      <span class="code-font text-gradient">&gt; Olá, mundo! Eu sou</span>
+      <h1>Desenvolvedor de Software</h1>
+      <p>Especializado no desenvolvimento de sistemas corporativos, soluções industriais para chão de fábrica (MES), controle de qualidade (LIMS), automações IoT e integrações com o ERP TOTVS Protheus e bancos de dados relacionais.</p>
+      
+      <div class="btn-group">
+        <a href="#projetos" class="btn btn-primary"><i class="fa-solid fa-code"></i> Ver Projetos</a>
+        <a href="#contato" class="btn btn-outline"><i class="fa-regular fa-envelope"></i> Fale Comigo</a>
+      </div>
+    </div>
+
+    <!-- FOTO DE PERFIL VINDA DA PASTA fotos/eu.jpeg -->
+    <div class="profile-wrapper">
+      <div class="profile-card">
+        <img src="fotos/eu.jpeg" alt="Foto de Perfil" class="profile-img" onerror="this.src='https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80'">
+      </div>
+      <div class="badge-status">
+        <span class="status-dot"></span>
+        <span>Campinas, SP</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS SECTION -->
+  <section class="container" id="skills">
+    <h2 class="section-title">Tecnologias & Domínios</h2>
+
+    <div class="skills-filter">
+      <button class="filter-btn active" data-filter="all">Todas</button>
+      <button class="filter-btn" data-filter="backend">Backend & Lógica</button>
+      <button class="filter-btn" data-filter="database">Bancos de Dados</button>
+      <button class="filter-btn" data-filter="frontend">Frontend & Web</button>
+      <button class="filter-btn" data-filter="integrations">Integrações & Servidores</button>
+    </div>
+
+    <div class="grid skills-grid">
+      <!-- PHP -->
+      <div class="card skill-card" data-category="backend">
+        <i class="fa-brands fa-php"></i>
+        <div>
+          <h3>PHP</h3>
+          <p style="color:var(--text-muted); font-size:0.85rem;">Desenvolvimento de sistemas corporativos e regras de negócio</p>
+        </div>
+      </div>
+
+      <!-- PYTHON -->
+      <div class="card skill-card" data-category="backend">
+        <i class="fa-brands fa-python"></i>
+        <div>
+          <h3>Python</h3>
+          <p style="color:var(--text-muted); font-size:0.85rem;">Automações, telemetria e integração com sensores IoT</p>
+        </div>
+      </div>
+
+      <!-- SQL SERVER -->
+      <div class="card skill-card" data-category="database">
+        <i class="fa-solid fa-database"></i>
+        <div>
+          <h3>Microsoft SQL Server</h3>
+          <p style="color:var(--text-muted); font-size:0.85rem;">Modelagem, queries complexas e integração com Protheus</p>
+        </div>
+      </div>
+
+      <!-- MYSQL -->
+      <div class="card skill-card" data-category="database">
+        <i class="fa-solid fa-server"></i>
+        <div>
+          <h3>MySQL / MariaDB</h3>
+          <p style="color:var(--text-muted); font-size:0.85rem;">Gerenciamento de banco de dados para aplicações web</p>
+        </div>
+      </div>
+
+      <!-- JAVASCRIPT -->
+      <div class="card skill-card" data-category="frontend">
+        <i class="fa-brands fa-js"></i>
+        <div>
+          <h3>JavaScript</h3>
+          <p style="color:var(--text-muted); font-size:0.85rem;">Validações dinâmicas de interface e interatividade</p>
+        </div>
+      </div>
+
+      <!-- HTML5 & CSS3 -->
+      <div class="card skill-card" data-category="frontend">
+        <i class="fa-brands fa-html5"></i>
+        <div>
+          <h3>HTML5 & CSS3</h3>
+          <p style="color:var(--text-muted); font-size:0.85rem;">Interfaces responsivas e dashboards industriais</p>
+        </div>
+      </div>
+
+      <!-- ERP PROTHEUS -->
+      <div class="card skill-card" data-category="integrations">
+        <i class="fa-solid fa-network-wired"></i>
+        <div>
+          <h3>TOTVS Protheus</h3>
+          <p style="color:var(--text-muted); font-size:0.85rem;">Integração de módulos de vendas e dados operacionais</p>
+        </div>
+      </div>
+
+      <!-- SERVIDORES WEB -->
+      <div class="card skill-card" data-category="integrations">
+        <i class="fa-solid fa-gears"></i>
+        <div>
+          <h3>Apache & IIS</h3>
+          <p style="color:var(--text-muted); font-size:0.85rem;">Hospedagem e execução de aplicações web corporativas</p>
+        </div>
+      </div>
+
+      <!-- REST APIs / JSON -->
+      <div class="card skill-card" data-category="integrations">
+        <i class="fa-solid fa-code-compare"></i>
+        <div>
+          <h3>APIs REST & JSON</h3>
+          <p style="color:var(--text-muted); font-size:0.85rem;">Comunicação entre sistemas web, ERPs e dispositivos</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACADEMIC TIMELINE -->
+  <section class="container" id="trajetoria">
+    <h2 class="section-title">Trajetória Acadêmica</h2>
+
+    <div class="timeline">
+      <div class="timeline-item card">
+        <div class="timeline-date">Cursando — 4º / 8º Semestre</div>
+        <h3>Ciência da Computação</h3>
+        <p style="color:var(--primary); font-size:0.9rem;">UNIP (Universidade Paulista)</p>
+        <p style="color:var(--text-muted); margin-top:0.5rem;">Aprofundando conhecimentos em Engenharia de Software, Modelagem de Bancos de Dados, Estruturas de Dados e Arquitetura de Sistemas.</p>
+      </div>
+
+      <div class="timeline-item card">
+        <div class="timeline-date">Formação Técnica</div>
+        <h3>Técnico em Informática</h3>
+        <p style="color:var(--primary); font-size:0.9rem;">Instituto Federal de São Paulo (IFSP) — Campus Campinas</p>
+        <p style="color:var(--text-muted); margin-top:0.5rem;">Base sólida em lógica de programação, redes de computadores e desenvolvimento de software que despertou meu interesse definitivo pela tecnologia.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS SECTION -->
+  <section class="container" id="projetos">
+    <h2 class="section-title">Projetos de Impacto Real</h2>
+
+    <div class="grid projects-grid">
+      <!-- Projeto 1: Chão de Fábrica -->
+      <div class="card project-card">
+        <div>
+          <i class="fa-solid fa-industry" style="font-size: 2rem; color: var(--primary); margin-bottom: 1rem;"></i>
+          <h3>Sistema de Controle de Chão de Fábrica (MES)</h3>
+          <p style="color:var(--text-muted); font-size:0.9rem; margin-top:0.5rem;">
+            Solução focada em operabilidade fabril para validação em tempo real das respostas dos operadores, prevenindo erros no fluxo produtivo. Automatiza o rastreio da linha de produção desde a separação de insumos até a liberação do Produto Acabado (PA).
+          </p>
+          <div class="project-tags">
+            <span class="tag">PHP</span>
+            <span class="tag">MySQL / SQL Server</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">Validação em Tempo Real</span>
+            <span class="tag">Gestão Industrial</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Projeto 2: Laboratório e Controle de Qualidade -->
+      <div class="card project-card">
+        <div>
+          <i class="fa-solid fa-vial-circle-check" style="font-size: 2rem; color: var(--primary); margin-bottom: 1rem;"></i>
+          <h3>Sistema de Gestão de Laboratório e Qualidade (LIMS)</h3>
+          <p style="color:var(--text-muted); font-size:0.9rem; margin-top:0.5rem;">
+            Plataforma para preenchimento dinâmico de fichas de análise de acordo com as especificações técnicas de cada produto. Executa a emissão automatizada de laudos de qualidade para Matéria-Prima (MP), Embalagem (EX) e Produto Acabado (PA).
+          </p>
+          <div class="project-tags">
+            <span class="tag">PHP</span>
+            <span class="tag">SQL Server</span>
+            <span class="tag">Emissão de Laudos</span>
+            <span class="tag">Controle de Qualidade</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Projeto 3: Vendas Integrado Protheus -->
+      <div class="card project-card">
+        <div>
+          <i class="fa-solid fa-cart-shopping" style="font-size: 2rem; color: var(--primary); margin-bottom: 1rem;"></i>
+          <h3>Plataforma de Vendas Integrada ao ERP TOTVS Protheus</h3>
+          <p style="color:var(--text-muted); font-size:0.9rem; margin-top:0.5rem;">
+            Sistema comercial projetado para sincronização de pedidos, estoque e regras de negócio diretamente com o ERP TOTVS Protheus via banco de dados SQL Server e APIs, garantindo consistência financeira e agilidade nas rotinas de faturamento.
+          </p>
+          <div class="project-tags">
+            <span class="tag">PHP</span>
+            <span class="tag">SQL Server</span>
+            <span class="tag">Integração ERP</span>
+            <span class="tag">TOTVS Protheus</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Projeto 4: IoT Termômetro -->
+      <div class="card project-card">
+        <div>
+          <i class="fa-solid fa-temperature-arrow-up" style="font-size: 2rem; color: var(--primary); margin-bottom: 1rem;"></i>
+          <h3>Sistema IoT de Telemetria e Monitoramento Térmico</h3>
+          <p style="color:var(--text-muted); font-size:0.9rem; margin-top:0.5rem;">
+            Aplicação conectada a sensores para captação e envio contínuo de dados de temperatura e umidade para o banco de dados. Conta com algoritmo de checagem para disparar alertas quando os níveis saem do parâmetro ideal e gerador de relatórios gerenciais.
+          </p>
+          <div class="project-tags">
+            <span class="tag">Python</span>
+            <span class="tag">MySQL / SQL Server</span>
+            <span class="tag">IoT</span>
+            <span class="tag">Telemetria</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION (MODERN CARDS) -->
+  <section class="container" id="contato">
+    <h2 class="section-title">Contato Direto</h2>
+    
+    <p style="color:var(--text-muted); margin-bottom: 2rem;">Estou sempre disponível para conversar sobre projetos de automação, integrações corporativas, banco de dados e oportunidades na área de tecnologia!</p>
+
+    <div class="contact-grid">
+      <!-- WhatsApp -->
+      <a href="https://wa.me/5519988936713?text=Olá,%20vi%20seu%20portfólio%20e%20gostaria%20de%20conversar!" target="_blank" class="contact-card">
+        <i class="fa-brands fa-whatsapp" style="color: #25d366;"></i>
+        <h3>WhatsApp</h3>
+        <span>Enviar mensagem rápida</span>
+      </a>
+
+      <!-- E-mail -->
+      <a href="mailto:brennotavares51@gmail.com" target="_blank" class="contact-card">
+        <i class="fa-solid fa-envelope"></i>
+        <h3>E-mail</h3>
+        <span>brennotavares51@gmail.com</span>
+      </a>
+
+      <!-- LinkedIn -->
+      <a href="https://www.linkedin.com/in/brenno-tavares-8866a5205?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank" class="contact-card">
+        <i class="fa-brands fa-linkedin"></i>
+        <h3>LinkedIn</h3>
+        <span>Conectar na rede</span>
+      </a>
+
+      <!-- GitHub -->
+      <a href="https://github.com/BrennoTavares019/" target="_blank" class="contact-card">
+        <i class="fa-brands fa-github"></i>
+        <h3>GitHub</h3>
+        <span>Ver repositórios</span>
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 - Desenvolvido por Brenno</p>
+    </div>
+  </footer>
+
+  <!-- JS Externo -->
+  <script src="script.js"></script>
+</body>
+</html>
